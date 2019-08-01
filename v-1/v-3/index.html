@@ -1,0 +1,123 @@
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
+<script>
+    var timeV = "00:08"
+
+</script>
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" media="(orientation: portrait)" href="code/video-mobil.css">
+
+<link rel="stylesheet" media="(orientation: landscape)" href="code/video.css">
+
+
+<body>
+    <section id="section-video">
+        <video src="http://media.w3.org/2010/05/sintel/trailer.mp4" playsinline></video>
+
+
+        <div id="ghost" onclick="openSide()">
+            <img src="media/play-button.png" style="cursor: pointer" />
+        </div>
+
+
+        <div class="video-controls">
+            <!--   Play and pause buttons -->
+            <button class="material-icons play" style="margin-right: 20px">play_arrow</button>
+            <button class="material-icons pause" style="margin-right: 20px">pause</button>
+
+            <!--   Progress bar -->
+            <div class="progress-bar-parent flex">
+                <div class="progress-bar-background">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <!--   Playback Duration -->
+            <div class="playback-duration">
+                <span class="progress"></span>
+                <!--<span>/</span>
+            <span class="duration"></span>-->
+            </div>
+
+            <!--   Volume buttons -->
+            <button class="material-icons mute">volume_off</button>
+            <button class="material-icons unmute">volume_up</button>
+            <!--   <button class="material-icons fullscreen">fullscreen</button> -->
+            <!--   End video controls -->
+        </div>
+
+
+        <div id="hoka">
+            <div onclick="openSide()" id="ad-info" target="_blank">
+                <img id="imgProducto" src="" />
+                <div>
+                    <p id="nombreItem"></p>
+                </div>
+                <button>SHOP NOW</button>
+            </div>
+            <div id="point"></div>
+        </div>
+
+
+    </section>
+
+    <section id="info-Mobil">
+
+        <h2 id="inf-mobil"></h2>
+
+    </section>
+
+    <section id="side-shop">
+
+        <div class="close-side"><span onclick="closeSide()" style="cursor: pointer5">X</span></div>
+
+        <div style="display: flex; width: 100%; justify-content: center"><img src="media/descarga.jpg" /></div>
+
+        <div class="cont-side">
+            <div style="width: 100%"></div>
+            <h1 id="nomLong" class="pd"></h1>
+            <div style="width: 100%"></div>
+            <h3 id="descLong" class="pd"></h3>
+            <div style="width: 100%"></div>
+            <ul style="margin-left: 20px" id="detalles" class="pd">
+
+            </ul>
+            <div style="width: 100%"></div>
+            <button id="shopNow" >Shop Now</button>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="side-shopD">
+
+        <div class="close-sideD"><span onclick="closeSideM()" style="cursor: pointer5">X</span></div>
+
+        <div style="display: flex; width: 100%; justify-content: center"><img src="media/descarga.jpg" /></div>
+
+        <div class="cont-sideD">
+            <div style="width: 100%"></div>
+            <h1 id="nomLongD" class="pd"></h1>
+            <div style="width: 100%"></div>
+            <h3 id="descLongD" class="pd"></h3>
+            <div style="width: 100%"></div>
+            <ul style="margin-left: 20px" id="detallesD" class="pd">
+
+            </ul>
+            <div style="width: 100%"></div>
+            <button id="shopNowD" scrolling="no">Shop Now</button>
+        </div>
+
+    </section>
+
+    <style>
+
+
+    </style>
+</body>
+
+<script src="code/video.js"></script>

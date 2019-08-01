@@ -1,0 +1,302 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Rubik, Open Sans, sans-serif;
+}
+
+#section-video {
+    /*/width: 1280px;
+    height: 720px;*/
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+video {
+    background-color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+
+
+
+/*.box-alpha{
+    height: 80px;
+    background: rgba(255,255,255,0);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(201,201,201,0) 21%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    left: 0%;
+    margin-top: 100%;
+    width: 100vw;
+    z-index: 99910;
+}*/
+
+div.video-controls {
+    /*---------------- CONTENEDOR DE LOS CONTROLES ------*/
+    display: flex;
+    width: 100%;
+    margin-top: -50px;
+    height: 50px;
+    color: red;
+    font-family: arial;
+    z-index: 10;
+    overflow: hidden;
+    z-index: 99;
+}
+
+div.video-controls:before {
+    content: "";
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(201, 201, 201, 0) 21%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    margin-top: -30;
+    z-index: -10;
+}
+
+.playback-duration {
+    /*---------------- DURACION EN TEXTO ------*/
+    vertical-align: middle;
+    display: block;
+    /*- display: block; -*/
+    margin: auto;
+    padding: 0px 3px 0px 10px;
+    color: #74bf98;
+    z-index: 99;
+}
+
+.flex {
+    display: flex;
+    flex: 1;
+    z-index: 99;
+}
+
+button.material-icons {
+    /*---------------- contenedores de botones ------*/
+    background-color: rgba(0, 0, 0, 0);
+    color: #74bf98;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    height: 100%;
+    min-width: 40px;
+    padding: 0px;
+    z-index: 99;
+}
+
+ /*---------------- BARRA DE PROGRESO ------*/
+.progress-bar-parent {
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+
+.progress-bar-background {
+    height: 3px;
+    background-color: #4f8053;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #74bf98;
+    border-radius: 25px;
+    transition: 750ms;
+    z-index: 99;
+}
+/*----------------------------------------*/
+
+#hoka {
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    top: 100vh;
+    margin-top: -20px;
+}
+
+#point {
+    position: relative;
+    top: -8px;
+    left: -3px;
+    background-color: #74bf98;
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    transition: 750ms;
+    z-index: 999;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+#ad-info {
+    position: absolute;
+    height: 56px;
+    background: white;
+    border-radius: 100px;
+    display: flex;
+    left: -70px;
+    margin-top: -78px;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 15px;
+    visibility: hidden;
+    font-family: Rubik, Open Sans, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+    line-height: 18px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* boton de infomacion progress bar */
+
+
+#ad-info > button {
+    border: none;
+    background-color: #4667af;
+    border-radius: 50px;
+    color: white;
+    margin-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 8px 9px;
+    cursor: pointer;
+}
+
+
+#ad-info > img {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+/*----------------------------------*/
+
+
+#side-shop {
+    width: 0vw;
+    min-width: 0vw;
+    
+    height: 100%;
+    transition: 750ms;
+    overflow-x: hidden;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+
+
+@media(max-height: 686px){
+   #side-shop>div>img{
+    height: 180} 
+}
+
+#side-shop>.close-side{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+#side-shop>.close-side>span{
+    margin: 10px 10px 0px 0px;
+}
+
+.cont-side{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-side h1,.cont-side p, .cont-side ul{
+    margin: 0;
+}
+
+.cont-side h3{
+    font-weight: 100;
+}
+
+.cont-side ul{
+    margin-bottom: 60px;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.pd{
+    padding: 0px 35px;
+    font-family: Rubik,Open Sans,Helvetica Neue,arial,sans-serif;;
+}
+
+#shopNow{
+    width: 100%;
+    border: none;
+    height: 56px;
+    background: #4667af;
+    color: white;
+    font-size: 1.2em;
+    font-family: Rubik, Open Sans, sans-serif;
+}
+
+/*--------------------GHOST-----------------*/
+
+
+#ghost{
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 750ms;
+}
+
+
+
+#info-Mobil{
+    display: none;
+}
+
+#side-shopD{
+    display: none;
+}
