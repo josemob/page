@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: #f6e188;
+    position: relative;
+}
+
+
+/* === Styling and Animating Starting Text === */
+#clickMe {
+    width: 421px;
+    height: 186px;
+    position: absolute;
+    z-index: 5;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#words {
+    fill: #1d1d1d;
+    stroke: #1d1d1d;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+#words.run-animation {
+    fill: transparent;
+}
+
+#rectCover {
+    fill: #f6e188;
+}
+
+#rectCover.run-animation {
+    -webkit-animation: rectCover-Animation .5s .3s linear forwards;
+            animation: rectCover-Animation .5s .3s linear forwards;
+}
+
+@-webkit-keyframes rectCover-Animation {
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes rectCover-Animation {
+    100% {
+        height: 100%;
+    }
+}
+
+
+/* === Styling and Animating Silueta === */
+#silueta {
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+}
+
+#silueta.run-animation {
+    -webkit-animation: movingSilueta 1s 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            animation: movingSilueta 1s 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@-webkit-keyframes movingSilueta {
+    100% {
+        -webkit-transform: scale(.9) translate(20%, 5%);
+                transform: scale(.9) translate(20%, 5%);
+    }
+}
+
+@keyframes movingSilueta {
+    100% {
+        -webkit-transform: scale(.9) translate(20%, 5%);
+                transform: scale(.9) translate(20%, 5%);
+    }
+}
+
+#path1,
+#path2,
+#holes {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
+    stroke: rgb(23, 23, 23);
+    fill: rgb(255, 252, 213);
+    fill-opacity: 0;
+}
+
+#path1 {
+    stroke-dasharray: 1717;
+    stroke-dashoffset: 1717;
+}
+
+#path2 {
+    stroke-dasharray: 1505;
+    stroke-dashoffset: 1505;
+}
+
+#path1.run-animation,
+#path2.run-animation {
+    -webkit-animation: lineAnimation 4s 1s forwards linear, strokeHide 2s 4.2s forwards linear;
+            animation: lineAnimation 4s 1s forwards linear, strokeHide 2s 4.2s forwards linear;
+}
+
+#holes {
+    stroke-width: 2px;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+}
+
+#holes.run-animation {
+    -webkit-animation: lineAnimation .5s 3s forwards linear, strokeHide 2s 4.2s forwards linear;
+            animation: lineAnimation .5s 3s forwards linear, strokeHide 2s 4.2s forwards linear;
+}
+
+@-webkit-keyframes lineAnimation {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes lineAnimation {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes strokeHide {    
+    90% {
+        stroke-opacity: 1;
+        stroke: rgb(255, 255, 255);
+    }
+
+    100% {
+        stroke-opacity: 0;
+        stroke: rgb(255, 255, 255);
+    }
+}
+
+@keyframes strokeHide {    
+    90% {
+        stroke-opacity: 1;
+        stroke: rgb(255, 255, 255);
+    }
+
+    100% {
+        stroke-opacity: 0;
+        stroke: rgb(255, 255, 255);
+    }
+}
+
+#pngImage {
+    opacity: 0;
+}
+
+#pngImage.run-animation {
+    -webkit-animation: imgShow 2s 4.7s forwards linear;
+            animation: imgShow 2s 4.7s forwards linear;
+}
+
+@-webkit-keyframes imgShow {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes imgShow {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* === Styling and Animating Banners === */
+#pinkDiv,
+#blueDiv {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
+    -webkit-transform: translateX(-1200px);
+            transform: translateX(-1200px);
+}
+
+#pinkDiv {
+    background: #ff9290;
+    width: 60%;
+}
+
+#blueDiv {
+    background: #90d4ff;
+    width: 50%;
+}
+
+#pinkDiv.run-animation {
+    -webkit-animation: bannerAnimation 1.6s 5.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            animation: bannerAnimation 1.6s 5.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+#blueDiv.run-animation {
+    -webkit-animation: bannerAnimation 1s 5.2s linear forwards;
+            animation: bannerAnimation 1s 5.2s linear forwards;
+}
+
+@-webkit-keyframes bannerAnimation {
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@keyframes bannerAnimation {
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+
+/* === Styling and Animating Restart Btn === */
+#restartBtn {
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    -webkit-transform: translateX(-1700px);
+            transform: translateX(-1700px);
+    z-index: 9;
+    font-size: 65px;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+#restartBtn:hover {
+    color: #ea4946;
+}
+
+#restartBtn.run-animation {
+    -webkit-animation: restartBtn-Animation 1s 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            animation: restartBtn-Animation 1s 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@-webkit-keyframes restartBtn-Animation {
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@keyframes restartBtn-Animation {
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}

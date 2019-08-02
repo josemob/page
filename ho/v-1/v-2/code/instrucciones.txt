@@ -1,9 +1,0 @@
-/*
-"urlVideo":     enlace del video a reproducir
-"imgProducto":  imagen principal del producto
-"nombreItem":   nombre principal del producto a mostrar boton flotante
-"nomLong":      nombre completo del producto
-"descLong":     descripcion corta
-"detalles":     detalles del producto
-"linkDestino":  link de destino
-*/
