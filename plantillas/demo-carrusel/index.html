@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="recursos/style.css">
+    <link rel="stylesheet" href="recursos/owl.carousel.min.css">
+    <script src="recursos/jquery.min.js"></script>
+    <script src="recursos/owl.carousel.js"></script>
+</head>
+    <section id="banner">
+    <div id="imagen-b" onclick="redirect('https://www.google.com/')"></div>
+    <div class="row carrusell">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="img/demo-1.jpg">
+            </div>
+            <div class="item">
+              <img src="img/demo-2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/demo-3.jpg">
+            </div>
+            <div class="item">
+              <img src="img/demo-4.jpg">
+            </div>
+            <div class="item">
+              <img src="img/demo-5.jpg">
+            </div>
+          </div>
+          
+          <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                dots: false,
+                responsive: {
+                  0: {
+                    items: 1
+                  }
+                }
+              })
+            })
+          </script>
+        </div>
+      </div>
+    <footer></footer>
+    </section>
+    
+<body>
+    <script>
+        function redirect(goUrl) {
+			window.open(goUrl);
+		}
+    </script>
+</body>
+</html>
