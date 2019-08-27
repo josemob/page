@@ -1,281 +1,130 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
 
-#wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background: #f6e188;
-    position: relative;
-}
-
-
-/* === Styling and Animating Starting Text === */
-#clickMe {
-    width: 421px;
-    height: 186px;
-    position: absolute;
-    z-index: 5;
-    font-size: 20px;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
-
-#words {
-    fill: #1d1d1d;
-    stroke: #1d1d1d;
-    stroke-width: 1.5px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-}
-
-#words.run-animation {
-    fill: transparent;
-}
-
-#rectCover {
-    fill: #f6e188;
-}
-
-#rectCover.run-animation {
-    -webkit-animation: rectCover-Animation .5s .3s linear forwards;
-            animation: rectCover-Animation .5s .3s linear forwards;
-}
-
-@-webkit-keyframes rectCover-Animation {
-    100% {
-        height: 100%;
-    }
-}
-
-@keyframes rectCover-Animation {
-    100% {
-        height: 100%;
-    }
-}
-
-
-/* === Styling and Animating Silueta === */
-#silueta {
-    width: 100%;
-    height: 100vh;
-    max-height: 700px;
-    display: block;
-    position: absolute;
-    bottom: -10px;
-}
-
-#silueta.run-animation {
-    -webkit-animation: movingSilueta 1s 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-            animation: movingSilueta 1s 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-@-webkit-keyframes movingSilueta {
-    100% {
-        -webkit-transform: scale(.9) translate(20%, 5%);
-                transform: scale(.9) translate(20%, 5%);
-    }
-}
-
-@keyframes movingSilueta {
-    100% {
-        -webkit-transform: scale(.9) translate(20%, 5%);
-                transform: scale(.9) translate(20%, 5%);
-    }
-}
-
-#path1,
-#path2,
-#holes {
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3px;
-    stroke: rgb(23, 23, 23);
-    fill: rgb(255, 252, 213);
-    fill-opacity: 0;
-}
-
-#path1 {
-    stroke-dasharray: 1717;
-    stroke-dashoffset: 1717;
-}
-
-#path2 {
-    stroke-dasharray: 1505;
-    stroke-dashoffset: 1505;
-}
-
-#path1.run-animation,
-#path2.run-animation {
-    -webkit-animation: lineAnimation 4s 1s forwards linear, strokeHide 2s 4.2s forwards linear;
-            animation: lineAnimation 4s 1s forwards linear, strokeHide 2s 4.2s forwards linear;
-}
-
-#holes {
-    stroke-width: 2px;
-    stroke-dasharray: 80;
-    stroke-dashoffset: 80;
-}
-
-#holes.run-animation {
-    -webkit-animation: lineAnimation .5s 3s forwards linear, strokeHide 2s 4.2s forwards linear;
-            animation: lineAnimation .5s 3s forwards linear, strokeHide 2s 4.2s forwards linear;
-}
-
-@-webkit-keyframes lineAnimation {
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes lineAnimation {
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-@-webkit-keyframes strokeHide {    
-    90% {
-        stroke-opacity: 1;
-        stroke: rgb(255, 255, 255);
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Saira', sans-serif;
     }
 
-    100% {
-        stroke-opacity: 0;
-        stroke: rgb(255, 255, 255);
-    }
-}
-
-@keyframes strokeHide {    
-    90% {
-        stroke-opacity: 1;
-        stroke: rgb(255, 255, 255);
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
     }
 
-    100% {
-        stroke-opacity: 0;
-        stroke: rgb(255, 255, 255);
-    }
-}
-
-#pngImage {
-    opacity: 0;
-}
-
-#pngImage.run-animation {
-    -webkit-animation: imgShow 2s 4.7s forwards linear;
-            animation: imgShow 2s 4.7s forwards linear;
-}
-
-@-webkit-keyframes imgShow {
-    50% {
-        opacity: 0;
+    #banner {
+        background-color: black;
+        width: 300px;
+        height: 600px;
+        background-image: url(preview2col_mg.jpg);
+        background-position: bottom;
+        background-color: black;
+        background-repeat: no-repeat;
     }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes imgShow {
-    50% {
-        opacity: 0;
+    #banner video {
+        width: 300px;
+        height: 250px;
+        cursor: pointer;
     }
 
-    100% {
-        opacity: 1;
+    #botones-b {
+        background-color: cyan;
+        width: 300px;
+        height: 0px;
+        margin-top: -40px;
+        position: absolute;
+        z-index: 998;
     }
-}
 
-
-/* === Styling and Animating Banners === */
-#pinkDiv,
-#blueDiv {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
-    -webkit-transform: translateX(-1200px);
-            transform: translateX(-1200px);
-}
-
-#pinkDiv {
-    background: #ff9290;
-    width: 60%;
-}
-
-#blueDiv {
-    background: #90d4ff;
-    width: 50%;
-}
-
-#pinkDiv.run-animation {
-    -webkit-animation: bannerAnimation 1.6s 5.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-            animation: bannerAnimation 1.6s 5.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-#blueDiv.run-animation {
-    -webkit-animation: bannerAnimation 1s 5.2s linear forwards;
-            animation: bannerAnimation 1s 5.2s linear forwards;
-}
-
-@-webkit-keyframes bannerAnimation {
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
+    #btns-1 button {
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        margin: 0px 5px;
+        border-radius: 100px;
+        position: relative;
+        cursor: pointer;
+        transition-duration: 1s;
+        border: 1px solid rgba(0, 0, 0, 0.5);
     }
-}
 
-@keyframes bannerAnimation {
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
+    .display-off {
+        display: none
     }
-}
 
-
-/* === Styling and Animating Restart Btn === */
-#restartBtn {
-    position: absolute;
-    bottom: 7%;
-    left: 10%;
-    -webkit-transform: translateX(-1700px);
-            transform: translateX(-1700px);
-    z-index: 9;
-    font-size: 65px;
-    font-family: 'Pacifico', cursive;
-    color: black;
-    cursor: pointer;
-    transition: color .5s;
-}
-
-#restartBtn:hover {
-    color: #ea4946;
-}
-
-#restartBtn.run-animation {
-    -webkit-animation: restartBtn-Animation 1s 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-            animation: restartBtn-Animation 1s 5.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-@-webkit-keyframes restartBtn-Animation {
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
+    .display-on {
+        display: block
     }
+
+    #overlay {
+        position: absolute;
+        top: 350px;
+    }
+
+    #overlay .close {
+        position: absolute;
+        left: 300px;
+        margin-left: -15px;
+        color: white;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #overlay .banner {
+        width: 300px;
+        height: 350px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        background-repeat: no-repeat;
+    }
+
+    #overlay #bn1 {
+        background-image: url(arona-2.jpg)
+    }
+
+    #overlay #bn2 {
+        background-image: url(ateca-2.jpg)
+    }
+
+    #overlay #bn3 {
+        background-image: url(terraco-2.jpg)
+    }
+
+.btn-img1,.btn-img2,.btn-img3{
+    background-size: 100%;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes restartBtn-Animation {
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
-    }
+.btn-img1{
+    background-image: url(arona-btn.png);
 }
+.btn-img2{
+    background-image: url(ateca-btn.png);
+}
+.btn-img3{
+    background-image: url(terraco-2.jpg);
+}
+
+    #overlay .banner h4 {
+        color: white;
+        font-size: 32px;
+        position: relative;
+        top: 240px;
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    #overlay .banner button {
+        border: none;
+        top: 240px;
+        color: white;
+        border-radius: 50px;
+        padding: 2px 12px;
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
