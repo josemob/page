@@ -151,7 +151,7 @@
 
 <body>
     <content id="banner">
-        <video id="video" onmouseover="videoPause()" playsinline>
+        <video id="video" onmouseover="videoPause()" playsinline autoplay="true" muted>
             <source src="images/Maqueta_SuvSeat_30s_V5.mp4" type="video/mp4" />
             <source src="images/Maqueta_SuvSeat_30s_V5.webm" type="video/webm" />
             <source src="images/Maqueta_SuvSeat_30s_V5.ogg" type="video/ogg" />
@@ -197,7 +197,7 @@
         var btns1 = document.getElementById("btns-1");
         var boton1 = false;
         var boton2 = false;
-        var clickVideo = false;
+        var clickVideo = true;
         //--------------------------------------------------------------
         var total = Math.trunc(video.duration); // DURACION DEL VIDEO
         var porcent25 = Math.trunc(total * 0.25);
