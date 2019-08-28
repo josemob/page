@@ -43,16 +43,14 @@
 
     #btns-1 button {
         top: -70px;
-        width: 50px;
-        height: 50px;
+        width: 0px;
+        height: 0px;
         margin: 0px 5px;
-        border: none;
         border-radius: 100px;
-        background-color: rgb(160, 160, 160);
         position: relative;
         cursor: pointer;
-        transition-duration: 1s;
         border: 1px solid rgba(0, 0, 0, 0.5);
+        opacity: 0;
     }
 
     .display-off {
@@ -61,6 +59,14 @@
 
     .display-on {
         display: block
+    }
+
+    .display-on-2 {
+        width: 50px !important;
+        height: 50px !important;
+        opacity: 1 !important;
+        transition-property: initial;
+        transition-duration: 0.5s;
     }
 
     #overlay {
@@ -84,32 +90,40 @@
     }
 
     #overlay #bn1 {
-        background-image: url(images/arona.jpg) /*-----------RECURSO EXTERNO----------*/
+        background-image: url(images/arona.jpg)
+            /*-----------RECURSO EXTERNO----------*/
     }
 
     #overlay #bn2 {
-        background-image: url(images/ateca.jpg) /*-----------RECURSO EXTERNO----------*/
+        background-image: url(images/ateca.jpg)
+            /*-----------RECURSO EXTERNO----------*/
     }
 
     #overlay #bn3 {
-        background-image: url(images/terraco.jpg) /*-----------RECURSO EXTERNO----------*/
-    }
-    
-    .btn-img1,.btn-img2,.btn-img3{
-    background-size: 100%;
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
-}
-
-    .btn-img1 {
-        background-image: url(images/arona-btn.png); /*-----------RECURSO EXTERNO----------*/
+        background-image: url(images/terraco.jpg)
+            /*-----------RECURSO EXTERNO----------*/
     }
 
-    .btn-img2 {
-        background-image: url(images/ateca-btn.png); /*-----------RECURSO EXTERNO----------*/
+    #btn-img1,
+    #btn-img2,
+    #btn-img3 {
+        background-size: 100%;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
     }
 
-    .btn-img3 {
-        background-image: url(images/terraco-2.jpg); /*-----------RECURSO EXTERNO----------*/
+    #btn-img1 {
+        background-image: url(images/arona-btn.png);
+        /*-----------RECURSO EXTERNO----------*/
+    }
+
+    #btn-img2 {
+        background-image: url(images/ateca-btn.png);
+        /*-----------RECURSO EXTERNO----------*/
+    }
+
+    #btn-img3 {
+        background-image: url(images/terraco-2.jpg);
+        /*-----------RECURSO EXTERNO----------*/
     }
 
     #overlay .banner h4 {
@@ -132,18 +146,20 @@
         background-color: rgba(0, 0, 0, 0.5);
         cursor: pointer;
     }
+
 </style>
 
 <body>
     <content id="banner">
-        <video id="video" onmouseover="videoPause()" src="images/Maqueta_SuvSeat_30s_V5.mp4" playsinline></video><!-----------RECURSO EXTERNO---------->
+        <video id="video" onmouseover="videoPause()" src="images/Maqueta_SuvSeat_30s_V5.mp4" playsinline></video>
+        <!-----------RECURSO EXTERNO---------->
 
         <div id="botones-b">
             <center>
                 <div id="btns-1" class="display-off">
-                    <button class="btn-img1" onclick="btnClick(1)" onmouseover="video.pause()"></button>
-                    <button class="btn-img2" onclick="btnClick(2)" onmouseover="video.pause()"></button>
-                    <button class="btn-img3" onclick="btnClick(3)" onmouseover="video.pause()"></button>
+                    <button id="btn-img1" class="" onclick="btnClick(1)" onmouseover="video.pause()"></button>
+                    <button id="btn-img2" class="" onclick="btnClick(2)" onmouseover="video.pause()"></button>
+                    <button id="btn-img3" class="" onclick="btnClick(3)" onmouseover="video.pause()"></button>
                 </div>
             </center>
 
@@ -204,9 +220,14 @@
 
         function min() { // FUNCION QUE SE ACCIONA CADA 1 SEGUNDO
             if (video.currentTime > 4 && boton1 == false) { // CUANDO EL VIDEO LLEGUE A 5 SEGUNDOS
-                boton1 = true; // VALIDADOR PARA QUE LA ACCION NO SE REPITA
                 btns1.classList.remove('display-off'); // REMOCION DE CLASE QUE OCULTA ELEMENTOS
-                console.log("SI");
+                boton1 = true; // VALIDADOR PARA QUE LA ACCION NO SE REPITA
+                setTimeout(function(){
+                document.getElementById("btn-img1").classList.add('display-on-2');},500);
+                setTimeout(function(){
+                document.getElementById("btn-img2").classList.add('display-on-2');},1000);
+                setTimeout(function(){
+                document.getElementById("btn-img3").classList.add('display-on-2');},1500); 
             }
 
             if (video.currentTime == porcent25) {} // EJECUCION DE EVENTO CUANDO LLEGUE A 25%
@@ -242,6 +263,7 @@
         }
 
         setInterval('min()', 1000);
+
     </script>
 </body>
 
