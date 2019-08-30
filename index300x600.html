@@ -165,12 +165,11 @@
         background-color: rgba(0, 0, 0, 0.5);
         cursor: pointer;
     }
-
 </style>
 
 <body>
     <content id="banner">
-        <video id="video" onmouseover="videoPause()" playsinline autoplay="true" muted>
+        <video id="video" onmouseover="videoPause()" playsinline>
             <source src="images/Maqueta_SuvSeat_30s_V5.mp4" type="video/mp4" />
             <source src="images/Maqueta_SuvSeat_30s_V5.webm" type="video/webm" />
             <source src="images/Maqueta_SuvSeat_30s_V5.ogg" type="video/ogg" />
@@ -227,12 +226,19 @@
         var porcent75 = Math.trunc(total * 0.75);
 
         video.onclick = function() { // VIDEO PLAY Y VIDEO PAUSE
-            if (clickVideo == false) {
-                video.play();
-                clickVideo = true;
+
+            if (autoplay == 0) {
+                video.volume = 1;
+                autoplay = 1;
             } else {
-                video.pause();
-                clickVideo = false;
+                if (clickVideo == false) {
+                    video.play();
+                    video.volume = 1;
+                    clickVideo = true;
+                } else {
+                    video.pause();
+                    clickVideo = false;
+                }
             }
         }
 
@@ -242,8 +248,13 @@
             }
         }
 
+        window.onload = function() {
+            video.volume = 0;
+            video.play();
+        }
 
         function min() { // FUNCION QUE SE ACCIONA CADA 1 SEGUNDO
+
             if (video.currentTime >= 4 && video.currentTime < 5) { // CUANDO EL VIDEO LLEGUE A 5 SEGUNDOS
                 btns1.classList.remove('display-off'); // REMOCION DE CLASE QUE OCULTA ELEMENTOS
                 boton1 = true; // VALIDADOR PARA QUE LA ACCION NO SE REPITA
@@ -299,8 +310,5 @@
         }
 
         setInterval('min()', 1000);
-
     </script>
-</body>
-
-</html>
+</body></html>
