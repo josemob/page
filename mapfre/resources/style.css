@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+header #logo{
+    width: 350px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+header ul li{
+    border-right: 1px solid red;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: red;
+}
+
+header ul li:last-child{
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+/*--------------------------*/
+
+.box-beneficios{
+    padding: 10px 150px;
+    flex-wrap: nowrap;
+}
+
+.box-b{
+    width: 20%;
+    margin: 5px;
+    background: yellow;
+    height: 240px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.top-b{
+    background-color: #D9D9D9;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.top-b img{
+    margin-left: 10px;
+}
+
+.bottom-b{
+    background-color: rgba(216, 30, 5, 0.7);
+    height: 100%;
+}
