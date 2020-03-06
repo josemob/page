@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 </head>
-
 <body>
-
     <?php
     $array = [];
     $dir = "files/*"; 
@@ -14,13 +11,11 @@
     
         $data = file_get_contents("files/".$pop);
         $products = json_decode($data, true);
-
             /*foreach ($products as $product) {
                 echo '<pre>';
                 print_r($product[]);
                 echo '</pre>';
             }*/
-        
             foreach ($products as $product) {
                 foreach ($product as $produc) {
                     /*echo $produc['type']."<br>";*/
@@ -36,15 +31,10 @@
             }
         
         $json_string = json_encode($array);
-        file_put_contents($pop, $json_string);
+        file_put_contents('procesados'.$pop, $json_string);
         }
     
         print_r('LISTO');
-    
         ?>
-    
-        
-
 </body>
-
 </html>
