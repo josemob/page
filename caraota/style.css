@@ -1,0 +1,1050 @@
+/*-- titulo Slideshow --*/
+.slides .post-title .link_image{
+	position:relative !important;
+	top: -395px !important;
+	width: 829px;
+	color: black;
+	font-size: 1.5em;
+	z-index: 999 !important;
+}
+
+.slide-home-1{
+	height: 619px;
+	overflow: hidden;
+}
+
+.wpb_gallery_slides.wpb_flexslider.flexslider_slide.flexslider:first-child{
+	height: 480px;
+}
+
+.wpb_gallery .wpb_flexslider .flex-control-nav {
+    margin-top: 80px !important;
+}
+
+.flex-viewport{
+padding-top: 100px;
+}
+
+.wpb_gallery .wpb_flexslider .flex-control-nav {
+    bottom: auto;
+    top: 100%;
+    margin-top: 75px !important;
+}
+.flex-direction-nav a {
+	top: 60% !important;
+}
+
+.destacada-derecha.wpb_column.vc_column_container.vc_col-sm-3{
+	margin-top: 105px !important;
+}
+
+.slide-side{
+overflow: visible !important
+}
+
+@media(max-width: 768px){
+.slides .post-title .link_image{
+	top: 75px;
+	font-size: 0.82em;
+}}
+/*-- titulo Slideshow --*/
+
+
+.g1-hamburger.g1-hamburger-show.g1-hamburger-m.float {
+	display: flex;
+    background-color: green;
+    position: fixed;
+    z-index: 999;
+    left: auto;
+    bottom: 50px;
+    right: -10px;
+    height: 60px;
+    width: 60px;
+    float: inline-end;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+}
+
+
+.g1-hamburger.g1-hamburger-show.g1-hamburger-m.float .g1-hamburger-icon {
+    color: white !important;
+    font-size: 30px !important;
+}
+
+
+
+/*-- altura de slide-side --*/
+.slide-side{
+min-height: 582px !important;
+height: 582px !important;
+max-height: 582px !important;
+}
+
+@media(max-width: 768px){
+.slide-side{
+min-height: 865px !important;
+height: 865px !important;
+max-height: 865px !important;
+}
+	
+.slide-home-1{ /*--margin inferior slide--*/
+	max-height: 240px;
+	overflow: visible;
+}
+	
+.slide-side{
+min-height: 830px !important;
+height: 830px !important;
+max-height: 830px !important;
+}
+
+}
+/*-- altura de slide-side --*/
+
+.wpb_posts_slider .wpb_wrapper .wpb_gallery_slides{
+	box-shadow:none;
+	margin-bottom: 0px !important;
+}
+
+/*------------------*/
+
+
+
+.destacada-derecha .g1-collection-item{
+	padding: 0px 0px;
+	margin-bottom: 20px;
+}
+
+/* Link */
+.vc_custom_1558037585682 .entry-title a{
+	position:relative;
+	top:-8px;
+}
+@media(max-width: 768px){
+	.vc_custom_1558037585682 .entry-title a{
+	top:-5px;
+}}
+/* Link */
+
+.flex-caption p{
+	display: none !important;
+}
+
+#laVentana{
+	background-color: red;
+	height: 440px;
+	width: 300px;
+	margin-top: 80px;
+}
+
+/* List */
+.wpb_posts_slider .wpb_wrapper ol{
+	top:480px !important;
+}
+
+/* Flex caption */
+.slides li .flex-caption{
+	position: relative;
+margin-top: -170px;
+	height: 150px;
+	background: rgba(0,0,0,0);background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	border-bottom: 0px solid black !important;
+	z-index: -1;
+	}
+
+
+@media(max-width: 768px){
+	.slides .post-title .link_image{
+	top: -150px !important;
+	width: 829px;
+	font-weight: 900;
+}
+	
+	.flex-viewport{
+padding-top: 75px;
+margin-top: -25px;
+}
+	.wpb_posts_slider .wpb_wrapper .wpb_gallery_slides {
+    background-color: transparent !important;
+	}
+	
+	.slides li .flex-caption{
+	background: transparent !important;
+	border-bottom: 0px solid black !important;
+	}
+	
+	.flex-direction-nav a {
+	top: 65% !important;
+}
+	
+	.destacada-derecha.wpb_column.vc_column_container.vc_col-sm-3{
+	margin-top: 80px !important;
+}
+	
+	.vc_row.wpb_row.vc_row-fluid.slide-side{
+		margin-bottom: 120px !important;
+	}
+}
+
+
+/*------------------------*/
+
+  .cabezal-color .g1-delta.g1-delta-2nd.g1-collection-title span,
+   .g1-delta.g1-delta-2nd.archive-featured-title span {
+       color: white !important;
+       background: #58a944;
+       padding: 0px 25px;
+   }
+
+/*fondo y tamaÃ±o del header*/
+
+/*---  DESKTOP  ---*/
+@media(min-width:768px){
+	/* fondo */
+#page .g1-hb-row-b .g1-row-background{
+	background-image: url(/wp-content/uploads/2019/06/car-2.png);
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#page .g1-hb-row-b {
+height: 160px;
+}
+/*sombra*/
+/*tienes que verlo desktop*/	
+	.tienesqverlo{
+margin-top: -270px;
+margin-bottom: 10px	
+}
+
+.g1-hamburger.g1-hamburger-show.g1-hamburger-m.float {
+    display: none;
+	
+	}
+}
+
+
+/*---  MOVILE  ---*/
+@media(max-width:768px){
+
+.wpb_posts_slider .wpb_wrapper ol{
+		display:none;
+	}
+
+.wpb_posts_slider .wpb_wrapper .wpb_gallery_slides{
+		/*padding: 0 15px;*/
+		width: 97.8vw;
+		margin-left: -14px;
+		background-color: black;
+		height: 245px;
+		margin-bottom: -20px;
+	}
+	
+	.wpb_posts_slider .wpb_wrapper .wpb_gallery_slides img{
+		height: 245px;
+	}
+	
+/*-----Dentro del Movil espacio del banner zona divertida------*/	
+	.vc_custom_1558648260696 .adace-slot img{
+		margin-bottom: 15px
+		;
+	}
+	
+		
+/*--opinion separaciÃ³n telefono	
+.vc_custom_1558981018899 ul li{
+		margin-bottom: -40px !important;
+	}
+	--*/	
+/*--Lateral derecho 1 home --*/	
+	.Lateral_derecho_1 .adace-slot{
+ height: 290px;
+	}
+	
+	.Lateral_derecho_1 .adace-slot>div{
+		position: absolute !important;
+		left: 50% !important;
+		margin-left: -150px;
+	}
+	
+/*-------Caraota en Letras--------*/
+
+.zona-literaria {
+width: 440px;
+max-width: 440px;
+margin-left: 50px;
+	background-color: transparent;
+}	
+
+.zona-literaria .entry-title {
+	width: 190px;
+}	
+	
+}
+
+#page .g1-hb-boxed{
+	box-shadow:-20px -1px 50px -36px #0c0c0c;
+    
+	}
+
+/*----tienes que verlo-----*/
+
+.tienesqverlo .vc_custom_1562952856312 h2 span{
+	background-color:#58a944;
+	padding-top:17px;
+	padding-right:14px;
+	padding-left:18px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	padding-bottom:10px;
+	font-size: 15.75px ; 
+  
+}
+
+/*----tienes que verlo 2----*/
+.tienesqverlo-2 h2 span{
+	background-color:#58a944;
+	padding-top:17px;
+	padding-right:14px;
+	padding-left:18px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	padding-bottom:12px;
+}
+
+
+/*------Titular Opinion------*/
+.opinion .vc_custom_1560841062605 h2 span{
+	background-color:#58a944;
+	padding-top:20px;
+	padding-right:70px;
+	padding-left:70px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	padding-bottom:7px;
+	margin-left: -15px;
+	color: white;
+}
+/*--Quitar PaddingFondo Verde oscuro Opinion--*/
+.opinion .vc_custom_1560841062605{
+	padding-top:0px !important;
+}
+/*-----Blanco tiulos en opnion---*/
+.opinion .vc_custom_1560841062605 .entry-body a{
+	color: white;
+}
+/*----Centrar imagenes opnion----*/
+/* Thumbnail Image */
+/*.vc_custom_1558981018899 a{
+	position:relative;
+	top: 20px;
+	
+}*/
+
+/*--Opinion 2 debajo de Zona Divertida--*/
+
+.opinion-02{
+	background-image:linear-gradient(-180deg, #db6478 0%, #296829 100%) !important;
+	border-radius: 25px;
+}
+
+/*--Titulas opnion2--*/
+.Opinion_2 h2 span{
+	background-color:#58a944;
+	padding-top:20px;
+	padding-right:70px;
+	padding-left:70px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	padding-bottom:7px;
+	margin-left: -15px;
+	color: white;
+}
+
+/*---Blanco en los titulos---*/
+.Opinion_2 .entry-body a{
+	color: white;
+}
+
+/*--Noticias Mas Leidas Home titulo----*/
+#secondary > .widget .lamasleida{
+background-color:rgba(0,96,6,0.31);
+padding-right: 10px;
+padding-left: 10px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+/*--Noticias Mas Leidas Home Post Fondo verde transparente----*/
+#bimber_widget_posts-2 .widgettitle{
+background-color:#58a944;
+text-align: center;
+padding-top:17px;
+border-top-left-radius:25px;
+border-top-right-radius:25px;
+padding-bottom:10px;
+margin-bottom:0px;
+}
+/*-----------Aqui no se--------*/
+
+#page{
+	background-image: url("/wp-content/uploads/2020/02/CARAO-2-compressor.png") !important;
+	background-size: 1000px auto;
+	background-repeat: no-repeat;
+	background-position: 50vw 150px;
+	background-attachment: fixed;
+}
+
+/*-----*/
+#c-radio{
+	margin-top: -15px;
+}
+
+.btn-jos{
+    display: flex;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-jos .ico{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+    
+.btn-jos .ico span{
+    z-index: 333;
+}
+    
+.btn-jos .text{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif; 
+    background-image: url(/wp-content/uploads/2019/01/caraotaradio.png);
+    background-size: auto 60%;
+    background-position: left center;
+    background-repeat: no-repeat;
+	width: 145px;}  
+    
+.pulse {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 0 0 rgba(0, 147, 14, 0.7);
+    animation: pulse 1.5s infinite;
+}
+    
+
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 147, 14, 0.7);
+    box-shadow: 0 0 0 0 rgba(0, 147, 14, 0.7);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 30px rgba(0, 147, 14, 0);
+      box-shadow: 0 0 0 10px rgba(0, 147, 14, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0, 147, 14, 0);
+      box-shadow: 0 0 0 0 rgba(0, 147, 14, 0);
+  }
+}
+
+/*-------------------------*/
+
+.flex-control-paging li a{
+	    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.g1-divider:after, .g1-divider:before {
+    display: block;
+    height: 4px;
+    border-width: 4px 0;
+    margin-bottom: 4px;
+    border-style: dotted;
+    content: "";
+	opacity: .3;}
+
+/*-- texto tienes que verlo --*/
+.tienesqverlo h3, .tienesqverlo .g1-title, .tienesqverlo-2 h3, .tienesqverlo-2 .g1-title, .zona-div h3, .zona-div .g1-title{
+	color: white !important;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+font-size: 18px ;	
+}
+
+/*-- shadow tex destacadas derecha --*/
+.g1-skinmode .destacada-derecha .g1-delta{
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*-----------------------VIDEO-----------*/
+
+.adace-slot-wrapper.adace-after-paragraph.adace-align-center.adace-slot-wrapper-main{
+	height:240px;
+}
+
+/*@media(max-width:1024px){
+.g1-sharebar {
+    top: 0px;
+		overflow: hidden;
+	  max-height:40px;
+	}}*/
+
+#inner-video-ad{
+	height: 220px;
+	width: 360px;
+}
+
+.video-stiky{
+	position: fixed;
+	top: 100%;
+	left: 100%;
+	z-index: 9999;
+	margin-left: -360px;
+	margin-top: -220px;
+}
+
+/*.video-stiky iframe{
+	height: 220px;
+	width: 360px;
+}*/
+
+@media(max-width: 480px){
+	.video-mmm video{
+	height: 150px;
+	width: 250px;
+}
+
+.video-stiky{
+	margin-left: -250px;
+	margin-top: -205px;
+}
+	
+/*---COPA AMERICA---*/
+	
+/*	.copa-america .vc_single_image-img{
+		width: 100vw !important;
+		margin-top: 10px;
+}*/
+	
+/*---COPA AMERICA---*/
+	
+}
+
+@media(max-width: 1300px){
+	.td-stick-cabezal{
+		width: auto !important;}
+}
+
+/*----------------------------*/
+
+#cls-cabezal{
+    background: gray;
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: -10px;
+    margin-left: 356px;
+    border-radius: 100px 100px 100px 100px;
+    visibility: hidden;
+}
+#cls-cabezal:before, #cls-video-s:before{
+    content: "x";
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: -1px;
+    margin-left: -5px;
+    color: white;
+}
+#cls-video-s:before{
+    margin-top: -2px;
+    margin-left: -8px;
+    font-size: 2em;
+    color: black;
+}
+
+
+#cls-video-s{
+	background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 320px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px 100px 100px 100px;
+	border: 2px solid black;
+    visibility: hidden;
+    top: 0;
+}
+
+
+@media(max-width: 1300px){
+	#cls-video-s{
+    left: 216px;
+    width: 25px;
+    height: 25px;
+}
+	
+	#cls-video-s:before{
+    margin-top: -4px;
+    margin-left: -8px;
+    font-size: 1.6em;
+}
+}
+
+@media(max-width: 500px){	
+.td-stick-cabezal{
+    top: 100vh;
+    margin-top: -50px;
+}
+
+#cls-cabezal {
+    margin-left: 310px;
+    margin-top: -5px;
+}
+}
+
+.g1-advertisement-before-header-theme-area .adace-slot div {
+  padding-top: 0 !important; 
+  padding-bottom: 0 !important;
+}
+
+/*---------------------*/
+@media(orientation: portrait){
+.bimber_inside_header{
+	display: none;
+}}
+
+.g1-advertisement-before-header-theme-area{
+	z-index: 9999
+}
+
+.miguel-angel figure a img{
+		width: 95vw !important;
+	margin-bottom: 10px;
+	margin-top: -30px;
+}
+
+/*----------*/
+
+@media(orientation: landscape){
+	.miguel-angel{
+		width: 295.5px;
+}
+}
+
+
+/*----------Buenas Pulgas----------*/
+
+#pulgas-footer{
+    width: 100%;
+    height: 50px;
+	background-color: #116030;
+    background-image: url(/wp-content/uploads/2020/02/De-buenas-pulgas-background-footer-1-compressor.jpg);
+	background-position: center;
+}
+
+.de-buenas-pulgas{
+	overflow-x: hidden;
+}
+
+@media(width: 480px){
+	#pulgas-footer{
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
+}
+
+#PD-1 .vc_column-inner{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#PD-2 .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li{
+    margin-bottom: 0px !important;
+}
+
+#PD-1 a{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+#PD-1 a:hover{
+    color: #277f2e;
+}
+
+/*--------------------*/
+
+.TE-TEST{
+    width: 300px;
+    max-width: 350px;
+}
+
+.TE-TEST .entry-header{
+	margin-top: -260px;
+}
+
+.TE-TEST .entry-tpl-grid{
+	margin-left: 5px;
+}
+
+.TE-TEST .entry-header a{
+	text-align: justify;
+	padding: 0px 15px 210px 15px;
+}
+
+.TE-TEST .g1-delta.g1-delta-1st.entry-title{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 1.3em;
+}
+/*----Titulos Zona Literaria----*/
+.zona-literaria .wpb_wrapper{
+	margin-top: 248px;
+  margin-left: -20px !important;
+}
+
+#laVentana ul li h3{
+	position: absolute;
+font-size: 14px !important;
+	font-weight: 900;
+padding-top: 20px;
+	margin: -70px 0px 0px 16px;
+	color: black;
+	width: 280px !important;
+	max-width: 300px !important;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}	
+
+#laVentana ul li:last-child h3{
+	margin-top: -43px;
+}
+
+#laVentana .entry-title a{
+	width: 300px !important;
+	max-width: 300px !important;
+}
+
+@media(max-width: 480px){
+	.zona-literaria .entry-title{
+	margin-left: 20px;
+		width: 280px;
+}	
+	
+}
+
+.zona-literaria .entry-title:before{
+	content: "â—";
+	padding-right: 5px;
+}
+/*--Ocultar titulos Hoy---*/
+
+.eliminar_hoy .g1-title{
+	visibility: hidden;
+}
+/*- Fin Ocultar titulos Hoy--*/
+
+/*--tienes que verlo espacio--*/
+
+/*.tienesqverlo{
+margin-top: -30px;
+margin-bottom: 10px	
+}*/
+
+
+/*-----------------------------*/
+
+.tienesqverlo .vc_column-inner {   background-size: 100% auto !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+@media(min-width: 768px){
+	.tienesqverlo .vc_column-inner {  
+	width: 300px !important;
+	margin-left: 16px;
+}
+}
+
+.tienesqverlo .vc_column-inner .g1-collection-viewport{
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+/*--Lateral derecho 1 home --*/	
+	.Lateral_derecho_1 .adace-slot{
+ width: 300px !important
+	}
+
+/*----NO TE RIAS QUE ES VERDAD DESKTOP-----*/
+
+#no-te-rias>div{
+	background-position: top !important;
+	background-size: 100% auto !important;
+}
+
+#no-te-rias .entry-header h3{
+	color: white;
+}
+
+@media only screen and (min-width: 1025px){
+ #no-te-rias .g1-collection-columns-2 .g1-collection-item {
+    width: 440px;
+	margin-top: 90px;
+	margin-left: 330px;
+	}}
+
+/*----NO TE RIAS QUE ES VERDAD DESKTOP-----*/
+
+@media(max-width: 768px)
+{
+	#no-te-rias>div{
+	background-position: top !important;
+	background-size: 100% auto !important;
+		background-image: url(/wp-content/uploads/2019/08/Untitled-1.jpg) !important;
+}
+
+	 #no-te-rias .g1-collection-columns-2 .g1-collection-item {
+    width: auto;
+	margin-top: 95px;
+	
+	}
+	
+	.tienesqverlo{
+		margin-top: -210px;
+	}
+
+}
+
+/*----------------------------*/
+
+.g1-column.g1-dropable{
+	max-height: 160px; 
+}
+/*------------fondo-secciones------------*/ 
+.entry-tpl-tile .entry-body:before{
+	content: "";
+	background: rgba(0,0,0,0);background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+	position: absolute;
+	margin-top: -305px;
+	width: 100%;
+	left:0px;
+    margin-left: auto;
+    margin-right: auto;
+	height: 460px;
+	z-index:0;
+}
+
+.entry-tpl-tile .entry-title {
+    background-color: rgba(0,0,0,0);
+    box-shadow: 10px 0 0 rgba(0,0,0,0), -10px 0 0 rgba(0,0,0,0);
+}
+
+.entry-tpl-tile-xxl .entry-ctas, .entry-tpl-tile-xxl .entry-header {
+    max-width: 950px;
+}
+/*------------fondo-secciones------------*/
+
+/*--boton zona prohibida--*/
+
+.zona-prohibida{
+  background-image: url("/wp-content/uploads/2019/06/Boton-bueno.gif");
+  background-repeat:no-repeat;
+  color: rgba(0,0,0,0);
+  background-size: 100% auto;
+	width: 130px;
+  }
+
+/*--boton Contacto--*/
+
+.boton-contacto{
+  color: rgba(0,0,0,0);
+  }
+
+.boton-contacto:before{
+	content: "";
+	margin:-5px -30px;
+	position: absolute;
+	height: 40px;
+	width: 100px;
+  background-image: url("/wp-content/uploads/2020/02/envelope-compressor.png");
+  background-repeat:no-repeat;
+  color: rgba(0,0,0,1);
+  background-size: 100% auto;
+	
+	}
+
+.g1-advertisement-after-featured-content {
+    z-index: 999;
+}
+
+/*---CARAOTA TIPS---*/
+
+.g1-row.g1-row-fluid.g1-row-nogutter.g1-row-layout-page.archive-featured.archive-featured-stretched{
+	overflow: hidden !important;
+}
+
+#la-gente{
+    overflow: hidden !important;
+}
+
+@media(min-width: 768px){
+#laVentana{
+	width: 300px;
+	margin-left: 20px;
+	}}
+
+.deportes .entry-featured-media{
+    height: 170px;
+}
+
+.deportes-v.vc_row.wpb_row.vc_inner.vc_row-fluid.vc_row-has-fill{
+    min-height: 345px !important;
+}
+
+
+
+.deportes-b{
+backgrou"›Z7(iØš‰š  C            (i 
+             ÿÿÿÿnd: rgb(51,51,53);
+background: linear-gradient(117deg, rgba(51,51,53,1) 0%, rgba(1,0,0,1) 100%);
+}
+
+.g1-searchform-tpl-default.g1-searchform-ajax.search-form{
+	
+}
+
+/*-------------------------*/
+
+.post-ratings {
+    border: 1px solid #dedede;
+	background-color: #f2f2f2;
+	font-family: roboto;
+	font-weight: 400;
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+}
+
+.post-ratings .logo-val{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-ratings .logo-val img{
+	width: 130px;
+    margin-left: 20px;
+}
+
+.post-ratings .val-box{
+	padding: 25px;
+	flex: 1;
+}
+
+.val-top{
+	display: flex;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+}
+
+.val-top div:first-child{
+	width: 60%;
+	font-weight: 700;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+}
+.val-top div:last-child{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.val-bottom div{
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.post-ratings .img-star img{
+	margin: 0px 2px;
+	width: 23px;
+	height: 23px;
+}
+
+@media(max-width: 768px){
+.post-ratings .logo-val img {
+    width: 110px;
+    margin-left: 20px;
+}
+	
+	.val-top{
+		flex-wrap: wrap;
+}
+	
+	.val-top div:first-child{
+	width: 100%;
+}
+	
+.val-top div:last-child{
+	flex: auto;
+    margin-top: 5px;
+    flex-direction: row-reverse;
+}
+	.search-form-wrapper.header{
+		display: none !important;
+	}
+	
+.g1-hamburger.g1-hamburger-show.g1-hamburger-m.float {
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    left: auto;
+    bottom: 65px;
+    right: -10px;
+    height: 60px;
+    width: 60px;
+    float: inline-end;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.g1-hamburger.g1-hamburger-show.g1-hamburger-m.float .g1-hamburger-icon {
+    color: black !important;
+    font-size: 30px !important;
+}
+
+/*--Espacio de boton de zona prohibida en el menu movil--*/
+	
+	#btn-zp{
+		margin-top:0px !important;
+		margin-bottom:5px !important;
+	}	
+	
+}
+	
+.search-form-wrapper.header{
+    position: absolute;
+    z-index: 999;
+    width: 768px;
+    left: 50%;
+    margin-left: -384px;
+    margin-top: 165px;
+}
