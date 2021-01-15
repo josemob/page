@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    .indicadores {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(img/final.png);
+    }
+
+    .indicadores:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        background-image: url(img/Asset%201Logo-1.png);
+    }
+
+    .indicadores div {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .indicadores h3 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 600px;
+        margin-top: 15px
+    }
+
+    .indicadores p {
+        width: 100%;
+        margin-top: 5px;
+        text-align: center;
+        color: white;
+    }
+
+    .indicadores .datos span {
+        font-family: 'arial', sans-serif;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 6px;
+        letter-spacing: 2.5px;
+        font-size: 0.7em;
+    }
+
+    .d1{
+        width: 33.3%;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .indicadores .d1 .datos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indicadores .d1 .indicador {
+        width: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .indicadores .d1 .indicador span {
+        width: 18px;
+        height: 90%;
+        margin-top: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+    }
+
+    .indicadores .d1 .indicador .up {
+        background-image: url(img/up-arrow.png);
+    }
+
+    .indicadores .d1 .indicador .down {
+        background-image: url(img/down-arrow.png);
+    }
+
+    .indicadores .d1 .indicador .equal {
+        background-image: url(img/igual.png);
+    }
+
+    .indicadores .bcv h3 {
+        color: #2bb673;
+    }
+
+    .indicadores .monitor h3 {
+        color: #39b54a;
+    }
+
+    .indicadores .enparalelo h3 {
+        color: #ed1c24;
+    }
+    
+    #rubros{
+        background-image: url(img/final-r.jpg);
+            width: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 1.3em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 3px 0 8px 0;
+        border-top: 2px solid white;
+        
+    }
+    
+    #rubros span{
+        background-image: url(img/arrow-w.png);
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        margin-left: 7px;
+        background-size: 100% auto;
+    }
+</style>
+
+<body>
+
+    <img style="width: 100%" src="img/ss.jpg"/>
+    
+    <div class="indicadores">
+        <div class="d1 bcv">
+            <div class="datos">
+                <h3>BCV</h3>
+                <p>1.103.443.69</p>
+                <span>@MonitorDolar</span>
+            </div>
+            <div class="indicador">
+                <span class="up"></span>
+            </div>
+        </div>
+
+        <div class="d1 monitor">
+            <div class="datos">
+                <h3>MonitorDolar</h3>
+                <p>1.103.443.69</p>
+                <span>@doihoih</span>
+            </div>
+            <div class="indicador">
+                <span class="down"></span>
+            </div>
+        </div>
+        <div class="d1 enparalelo">
+            <div class="datos">
+                <h3>EnParalelo</h3>
+                <p>1.103.443.69</p>
+                <span>@unaVaca</span>
+            </div>
+            <div class="indicador">
+                <span class="equal"></span>
+            </div>
+        </div>
+        
+        <div style="display: flex; width: 100%">
+        
+        <div class="d1 paypal">
+            <div class="datos">
+                <h3>Paypal</h3>
+                <p>1.103.443.69</p>
+                <span>@Nemo</span>
+            </div>
+            <div class="indicador">
+                <span class="up"></span>
+            </div>
+        </div>
+        <div class="d1 amazon">
+            <div class="datos">
+                <h3>Amazon</h3>
+                <p>1.103.443.69</p>
+                <span>@PapaPitufo</span>
+            </div>
+            <div class="indicador">
+                <span class="down"></span>
+            </div>
+        </div>
+        <div class="d1 theairtm">
+            <div class="datos">
+                <h3>TheAirTM</h3>
+                <p>1.103.443.69</p>
+                <span>@otraVaca</span>
+            </div>
+            <div class="indicador">
+                <span class="equal"></span>
+            </div>
+        </div>
+        </div>
+        
+        <div id="rubros"> Rubros hoy - has click aqui <span></span></div>
+        
+        <img style="width: 100%" src="img/ss-1.jpg"/>
+
+    </div>
+
+</body></html>

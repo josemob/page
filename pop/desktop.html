@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    #box-ind {
+        width: 100%;
+        height: 90px;
+        background-color: blue;
+        background-image: url(img/Asset%201Logo.jpg);
+        background-repeat: repeat;
+        display: flex;
+    }
+
+    #box-ind:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        background-image: url(img/Asset%201Logo-1.png)
+    }
+
+    #box-ind .d1 {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #box-ind .d1 .datos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    #box-ind .d1 .indicador {
+        width: 30px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #box-ind .d1 .indicador span {
+        width: 18px;
+        height: 90%;
+        margin-top: -5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+    }
+
+    #box-ind .d1 .indicador .up {
+        background-image: url(img/up-arrow.png);
+    }
+
+    #box-ind .d1 .indicador .down {
+        background-image: url(img/down-arrow.png);
+    }
+
+    #box-ind .d1 .indicador .equal {
+        background-image: url(img/igual.png);
+    }
+
+    #box-ind div h3 {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    #box-ind div p {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    
+    #box-ind .datos span {
+        font-family: 'arial', sans-serif;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 5px;
+        letter-spacing: 2.5px;
+        font-size: 0.7em;
+    }
+
+    #box-ind .bcv h3 {
+        color: #2bb673;
+    }
+
+    #box-ind .monitor h3 {
+        color: #39b54a;
+    }
+
+    #box-ind .enparalelo h3 {
+        color: #ed1c24;
+    }
+</style>
+
+<body>
+
+    <div id="box-ind">
+        <div class="d1 bcv">
+            <div class="datos">
+                <h3>BCV</h3>
+                <p>1.103.443.69</p>
+                <span>@MonitorDolar</span>
+            </div>
+            <div class="indicador">
+                <span class="up"></span>
+            </div>
+        </div>
+
+        <div class="d1 monitor">
+            <div class="datos">
+                <h3>MonitorDolar</h3>
+                <p>1.103.443.69</p>
+                <span>@doihoih</span>
+            </div>
+            <div class="indicador">
+                <span class="down"></span>
+            </div>
+        </div>
+        <div class="d1 enparalelo">
+            <div class="datos">
+                <h3>EnParalelo</h3>
+                <p>1.103.443.69</p>
+                <span>@unaVaca</span>
+            </div>
+            <div class="indicador">
+                <span class="equal"></span>
+            </div>
+        </div>
+        <div class="d1 paypal">
+            <div class="datos">
+                <h3>Paypal</h3>
+                <p>1.103.443.69</p>
+                <span>@Nemo</span>
+            </div>
+            <div class="indicador">
+                <span class="up"></span>
+            </div>
+        </div>
+        <div class="d1 amazon">
+            <div class="datos">
+                <h3>Amazon</h3>
+                <p>1.103.443.69</p>
+                <span>@PapaPitufo</span>
+            </div>
+            <div class="indicador">
+                <span class="down"></span>
+            </div>
+        </div>
+        <div class="d1 theairtm">
+            <div class="datos">
+                <h3>TheAirTM</h3>
+                <p>1.103.443.69</p>
+                <span>@otraVaca</span>
+            </div>
+            <div class="indicador">
+                <span class="equal"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=""></script>
+</body></html>
