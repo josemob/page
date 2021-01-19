@@ -58,7 +58,7 @@
         font-size: 0.7em;
     }
 
-    .d1{
+    .d1 {
         width: 33.3%;
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
     }
@@ -109,40 +109,78 @@
     .indicadores .enparalelo h3 {
         color: #ed1c24;
     }
-    
-    #rubros{
+
+    #rubros {
         background-image: url(img/BG-R.png);
         background-size: 100% auto;
         background-position: center center;
-            width: 100%;
+        width: 100%;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
-        font-size: 1.5em;
+        font-size: 1.6em;
         color: white;
         display: flex;
         justify-content: center;
-        padding: 2px 0 4px 0;
-        border-top: 2px solid white; 
+        padding: 2px 0 5px 0;
+        border-top: 2px solid white;
     }
-    
-    #rubros p{
-        margin-top: 8px;
-        font-family: 'Roboto', sans-serif;
-        color: #021b4a;
-    }
-    
-    #rubros img{
-        width: 69px;
+
+    #rubros p {
         margin-top: 3px;
+        font-family: 'Roboto', sans-serif;
+        color: #002d69;
+        text-shadow: 1.5px 1.5px 2px white;
+    }
+
+    #rubros img {
+        width: 85px;
+        margin-top: -15px;
         margin-left: 10px;
         background-size: auto 100%;
     }
+    
+    
+    #shopping-card{
+        animation: aa 2s ease infinite;
+    }
+    
+    @keyframes aa {
+			0% {
+                /*background-color: red;*/
+				transform: translateX(0px)
+			}
+        
+
+			1% {
+                /*background-color: white;*/
+				transform: translateX(20)
+			}
+
+			50% {
+                /*background-color: white;*/
+				transform: translateX(25);
+			}
+
+			80% {
+                
+                /*background-color: purple;*/
+				transform: translateX(30px);
+                opacity: 1;
+			}
+
+			100% {
+                
+                /*background-color: green;*/
+				transform: translateX(30px);
+                opacity: 0;
+			}
+		}
 </style>
 
 <body>
 
-    <img style="width: 100%" src="img/ss.jpg"/>
-    
+    <img style="width: 100%" src="img/ss.jpg" />
+
     <div class="indicadores">
         <div class="d1 bcv">
             <div class="datos">
@@ -175,44 +213,46 @@
                 <span class="equal"></span>
             </div>
         </div>
-        
+
         <div style="display: flex; width: 100%">
-        
-        <div class="d1 paypal">
-            <div class="datos">
-                <h3>Paypal</h3>
-                <p>1.103.443.69</p>
-                <span>@Nemo</span>
+
+            <div class="d1 paypal">
+                <div class="datos">
+                    <h3>Paypal</h3>
+                    <p>1.103.443.69</p>
+                    <span>@Nemo</span>
+                </div>
+                <div class="indicador">
+                    <span class="up"></span>
+                </div>
             </div>
-            <div class="indicador">
-                <span class="up"></span>
+            <div class="d1 amazon">
+                <div class="datos">
+                    <h3>Amazon</h3>
+                    <p>1.103.443.69</p>
+                    <span>@PapaPitufo</span>
+                </div>
+                <div class="indicador">
+                    <span class="down"></span>
+                </div>
+            </div>
+            <div class="d1 theairtm">
+                <div class="datos">
+                    <h3>TheAirTM</h3>
+                    <p>1.103.443.69</p>
+                    <span>@otraVaca</span>
+                </div>
+                <div class="indicador">
+                    <span class="equal"></span>
+                </div>
             </div>
         </div>
-        <div class="d1 amazon">
-            <div class="datos">
-                <h3>Amazon</h3>
-                <p>1.103.443.69</p>
-                <span>@PapaPitufo</span>
-            </div>
-            <div class="indicador">
-                <span class="down"></span>
-            </div>
+
+        <div id="rubros">
+            <p style="width: auto">Al mercado con caraota</p><img id="shopping-card" src="img/shopping-cart.gif" />
         </div>
-        <div class="d1 theairtm">
-            <div class="datos">
-                <h3>TheAirTM</h3>
-                <p>1.103.443.69</p>
-                <span>@otraVaca</span>
-            </div>
-            <div class="indicador">
-                <span class="equal"></span>
-            </div>
-        </div>
-        </div>
-        
-        <div id="rubros"><p style="width: auto">Al mercado con caraota</p><img src="img/KU.png" /></div>
-        
-        <img style="width: 100%" src="img/ss-1.jpg"/>
+
+        <img style="width: 100%" src="img/ss-1.jpg" />
 
     </div>
 
