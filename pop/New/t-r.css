@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#BG-video {
+    height: 300px;
+    overflow: hidden;
+}
+
+#BG-video video {
+        width: 100%;
+    }
+
+#BG-video:before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAAAlUlEQVRoge3UMQoCMRBA0UlYxANs4RH3GtbbewNbL7WNYGlhN98mioWdywbkPwiBqX4gTAABTMCSmbfMPALxF4ApM3mdZu7dtYrMXID3w9p9B8bebb+qpZR9REQp5XM+AEOfpPXUiDh9mV9qrdetY1bXFsrcvuIDOAO73l2rAsbMPPTukCRJkiRJkiRJkiRJkiRJ0naeRE1mtuUbo9oAAAAASUVORK5CYII=);
+    background-size: 15px;
+    z-index: 998;
+    width: 100%;
+    height: 300px;
+    left: 0;
+}
+
+#BG-video h2 {
+    text-align: center;
+    width: 100%;
+    font-family: "roboto";
+    font-weight: 900;
+    font-style: italic;
+    font-size: 70px;
+    margin-top: 110px;
+    margin-left: -100px;
+    color: white;
+    z-index: 999;
+    position: absolute;
+    text-shadow: 4px 4px 2px black;
+}
+
+#BG-video h2:after {
+    content: "";
+    position: absolute;
+    background-image: url(https://josemob.github.io/page/pop/img/shopping-cart.gif);
+    background-size: 200px;
+    width: 200px;
+    height: 120px;
+    margin-top: -30px;
+    background-repeat: no-repeat;
+}
+
+.table.table-hover {
+    margin-top: 20px;
+    width: 1080px;
+    position: absolute;
+    margin-left: -540px;
+    left: 50%;
+}
+
+.table.table-hover thead {
+    font-family: Roboto !important;
+    font-size: 20px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+}
+
+.table.table-hover tr:first-child th {
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 5px;
+}
+
+.table.table-hover tr th {
+    padding-top: 10px;
+}
+
+.table.table-hover tr td {
+    padding-top: 5px;
+    font-family: lato;
+    font-weight: 600;
+    border-right: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding-left: 10px;
+}
+
+.table.table-hover tbody tr td:nth-child(1) {
+    font-family: Roboto !important;
+    font-weight: 600 !important;
+    font-size: 1.1em;
+    border-left: 1px solid #d1d1d1;
+}
+
+@media(max-width: 1080px) {
+    .table.table-hover {
+        width: 100%;
+        margin-left: 0px;
+        left: 0%;
+    }
+}
+
+@media(max-width: 768px) {
+    #BG-video {
+        height: 250px;
+        width: 100%;
+    }
+
+    #BG-video:before {
+        height: 250px;
+    }
+
+    #BG-video video {
+        width: auto;
+        height: 250px;
+    }
+
+    #BG-video h2 {
+        font-size: 50px;
+        text-align: start;
+        padding: 0 20px;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+
+    #BG-video h2:after {
+        background-size: 120px;
+        width: 120px;
+        height: 80px;
+        margin-left: 10px;
+        margin-top: -15px;
+    }
+
+    .table.table-hover {
+        padding: 0 10px;
+        zoom: 80%;
+    }
+
+}
