@@ -1,70 +1,110 @@
-<footer class="clear">
-    <nav class="gobiernoLinea">
-        <a href="http://www.legal.unal.edu.co" target="_top">Régimen Legal</a>
-        <a href="http://personal.unal.edu.co" target="_top">Talento humano</a>
-        <a href="http://contratacion.unal.edu.co" target="_top">Contratación</a>
-        <a href="http://personal.unal.edu.co" target="_top">Ofertas de empleo</a>
-        <a href="http://launalcuenta.unal.edu.co/" target="_top">Rendición de cuentas</a>
-        <a href="http://docentes.unal.edu.co/concurso-profesoral/" target="_top">Concurso docente</a>
-        <a href="http://www.pagovirtual.unal.edu.co/" target="_top">Pago Virtual</a>
-        <a href="http://controlinterno.unal.edu.co/" target="_top">Control interno</a>
-        <a href="http://siga.unal.edu.co" target="_top">Calidad</a>
-        <a href="http://unal.edu.co/buzon-de-notificaciones/" target="_self">Buzón de notificaciones</a>
-    </nav>
+<!DOCTYPE html>
+<html lang="">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
 
-    <nav class="gobiernoLinea">
-        <a href="http://correo.unal.edu.co" target="_top">Correo institucional</a>
-        <a href="index.html#">Mapa del sitio</a>
-        <a href="http://redessociales.unal.edu.co" target="_top">Redes Sociales</a>
-        <a href="index.html#">FAQ</a>
-        <a href="http://unal.edu.co/quejas-y-reclamos/" target="_self">Quejas y reclamos</a>
-        <a href="http://unal.edu.co/atencion-en-linea/" target="_self">Atención en línea</a>
-        <a href="http://unal.edu.co/encuesta/" target="_self">Encuesta</a>
-        <a href="index.html#">Contáctenos</a>
-        <a href="http://www.onp.unal.edu.co" target="_top">Estadísticas</a>
-        <a href="index.html#">Glosario</a>
-    </nav>
+<body>
+    
+    
+    
+    
+    
+    
+    <script>
+        
+        (function($){
 
+    // Creating a jQuery plugin:
 
-    <div class="footer-info">
-        <p class="col-sm-12 col-md-6 contacto">
-            <b>Contacto página web:</b>
-            <span>Dirección .....</span>
-            <span>Edificio ...</span>
-            <span>Bogotá D.C., Colombia</span> 
-            <span>(+57 1) 316 5000 Ext.</span>
-        </p>
-        <p class="col-sm-12 col-md-6 derechos">
-            <span>Copyright 2014</span>
-            <span>Algunos derechos reservados.</span>
-            <a title="Comuníquese con el administrador de este sitio web" href="mailto:EMAIL@unal.edu.co">EMAIL@unal.edu.co</a>
-            <a href="index.html#">Acerca de este sitio web</a>
-            <span>Actualización:31/05/16</span>
-        </p>
-    </div>
+    $.generateFile = function(options){
 
-    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 logos">
-        <div class="col-xs-6 col-sm-12 col-md-6 no-padding">
-            <a class="col-xs-6 col-sm-12" href="http://www.orgulloun.unal.edu.co">
-                <img class="hidden-print" alt="Orgullo UN" src="images/log_orgullo.png" width="78" height="21" />
-                <img class="visible-print" alt="Orgullo UN" src="images/log_orgullo_black.png" width="94" height="37" />
-            </a>
+        options = options || {};
 
-            <a class="col-xs-6 col-sm-12 imgAgencia" href="http://www.agenciadenoticias.unal.edu.co/inicio.html">
-                <img class="hidden-print" alt="Agencia de noticias" src="images/log_agenc.png" width="94" height="25" />
-                <img class="visible-print" alt="Agencia de noticias" src="images/log_agenc_black.png" width="94" height="37" />
-            </a>
-        </div>
-        <div class="col-xs-6 col-sm-12 col-md-6 no-padding">
-            <a class="col-xs-6 col-sm-12" href="https://www.sivirtual.gov.co/memoficha-entidad/-/entidad/T0356">
-                <img alt="Trámites en línea" src="images/log_gobiern.png" width="67" height="51" />
-            </a>
+        if(!options.script || !options.filename || !options.content){
+            throw new Error("Please enter all the required config options!");
+        }
 
-            <a class="col-xs-6 col-sm-12" href="http://www.contaduria.gov.co/">
-                <img alt="Contaduría general de la republica" src="images/log_contra.png" width="67" height="51" />
-            </a>
-        </div>
+        // Creating a 1 by 1 px invisible iframe:
 
-    </div>
-</footer>
+        var iframe = $('<iframe>',{
+            width:1,
+            height:1,
+            frameborder:0,
+            css:{
+                display:'none'
+            }
+        }).appendTo('body');
+
+        var formHTML = '<form action="" method="post">'+
+            '<input type="hidden" name="filename" />'+
+            '<input type="hidden" name="content" />'+
+            '</form>';
+
+        // Giving IE a chance to build the DOM in
+        // the iframe with a short timeout:
+
+        setTimeout(function(){
+
+            // The body element of the iframe document:
+
+            var body = (iframe.prop('contentDocument') !== undefined) ?
+                            iframe.prop('contentDocument').body :
+                            iframe.prop('document').body;    // IE
+
+            body = $(body);
+
+            // Adding the form to the body:
+            body.html(formHTML);
+
+            var form = body.find('form');
+
+            form.attr('action',options.script);
+            form.find('input[name=filename]').val(options.filename);
+            form.find('input[name=content]').val(options.content);
+
+            // Submitting the form to download.php. This will
+            // cause the file download dialog box to appear.
+
+            form.submit();
+        },50);
+    };
+
+})(jQuery);
+        
+        
+        $(document).ready(function() {
+
+            $('#download').click(function(e) {
+
+                $.generateFile({
+                    filename: 'export.txt',
+                    content: $('textarea').val(),
+                    script: 'download.php'
+                });
+
+                e.preventDefault();
+            });
+
+            $('#downloadPage').click(function(e) {
+
+                $.generateFile({
+                    filename: 'page.html',
+                    content: $('html').html(),
+                    script: 'download.php'
+                });
+
+                e.preventDefault();
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-pc.css">
+    <title></title>
+    <link rel="stylesheet" href="src/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="src/vendors/jquery.min.js"></script>
+    <script src="src/owlcarousel/owl.carousel.js"></script>
+    <script src="src/script-pc.js"></script>
+</head>
+
+<body>
+
+    <div id="box-pc">
+        <div class="ticket">
+            <h3 class="resp view-block">Respuesta</h3>
+            <div class="respuestas-box view-block">
+                <ul>
+                    <li><button class="btn-respuesta"><img src="images/1.png" />
+                            <p>Una pelota</p>
+                        </button>
+                    </li>
+                    <li><button class="btn-respuesta"><img src="images/2.png" />
+                            <p>Una bolsa con regalos</p>
+                        </button>
+                    </li>
+                    <li><button class="btn-respuesta"><img src="images/3.png" />
+                            <p>Un bate de Béisbol</p>
+                        </button>
+                    </li>
+                    <li><button class="btn-respuesta"><img src="images/4.png" />
+                            <p>Una torta de cumpleaños</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="datos-box">
+                <h4>Datos de contacto</h4>
+                <div class="datos">
+                    <p>Correo</p>
+                    <input type="text" placeholder="Correo electronico" />
+                </div>
+                <div class="datos">
+                    <p>Nombre y Apellido</p>
+                    <input type="text" placeholder="ingrese su nombre y apellido" />
+                </div>
+                <div class="datos">
+                    <p>Cedula de identidad</p>
+                    <input type="text" placeholder="ingrese su cedula" />
+                </div>
+                <div class="datos">
+                    <p>Telefono</p>
+                    <input type="text" placeholder="ingrese su numero telefonico" />
+                </div>
+
+                <div class="datos-btn">
+                    <button class="send-datos">Enviar</button>
+                </div>
+            </div>
+
+
+
+            <div class="ticket-box">
+                <h4>Su ticket<br />ha sido generado</h4>
+
+                <div class="cupon">
+                    <img src="images/Ticketcolor-2.png" />
+                    <p>123456</p>
+                </div>
+
+                <p class="retornar-c">volver al concurso</p>
+                <div class="retornar-rrss">
+                    <a href="https://www.youtube.com/channel/UCQGXeidE67ybmAV_MW_M4bw/live" target="_parent"><img src="images/Youtube@4x.png" /></a>
+
+                    <a href="https://www.facebook.com/CaraotaDigital/" target="_parent"><img src="images/Facebook@4x.png" /></a>
+
+                    <a href="https://www.instagram.com/caraotadigital/?hl=es-la" target="_parent"><img src="images/Instagram@4x.png" /></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="clientes desktop">
+            <div class="fadeOut owl-carousel owl-theme carrusel">
+                <div class="item">
+                    <img src="images/Ronco-publicidad.png" />
+                </div>
+                <div class="item">
+                    <img src="images/Simpletv-publicidad.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="clientes movil">
+            <div class="fadeOut owl-carousel owl-theme carrusel">
+                <div class="item">
+                    <img src="images/BANNER-RONCO.png" />
+                </div>
+                <div class="item">
+                    <img src="images/Banner-Simpletv.png" />
+                </div>
+                <div class="item">
+                    <img src="images/Banner-Farmahorro.png" />
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.fadeOut').owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                dots: false,
+            });
+            $('.custom1').owlCarousel({
+                animateOut: 'slideOutDown',
+                animateIn: 'flipInX',
+                items: 1,
+                margin: 30,
+                stagePadding: 30,
+                smartSpeed: 450
+            });
+        });
+    </script>
+
+
+
+
+
+</body></html>

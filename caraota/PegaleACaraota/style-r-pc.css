@@ -1,0 +1,77 @@
+/*-- preguntas --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{margin:0px; padding: 0px;}
+
+body{
+    background-color: white;
+    background-size: auto 100%;
+    cursor: crosshair
+}
+
+#box-pc{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.no-view{
+    zoom: 120%;
+    margin-left: -30px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.view{
+    zoom: 100%;
+    margin-left: -0px;
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+
+
+.respuestas{
+    height: 540px;
+    width: 620px;
+    font-family: Helvetica;
+    font-weight: 700;
+    margin-left: -40%;
+}
+
+.respuestas div{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.respuestas div img{
+    width: 140px;
+}
+
+.respuestas div p{
+    color: white;
+    font-size: 3.2em;
+    margin-left: 20px;
+}
+
+.btns{
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    display: flex;
+    justify-content: space-between
+}
+
+.btns div{
+    width: 32px;
+    height: 32px;
+    margin-top: -32px;
+    background-color: #69a428;
+}
