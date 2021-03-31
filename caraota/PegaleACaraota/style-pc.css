@@ -273,10 +273,8 @@ body{
     .clientes.movil{
         height: 100vh;
         display: flex;
+        position: sticky;
         align-items: flex-end;
-        position: fixed;
     }
-    
-    
     
 })
