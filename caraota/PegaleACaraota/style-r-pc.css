@@ -28,11 +28,19 @@ body{
     transition-duration: 0.5s;
 }
 
+.no-view-fin{
+    zoom: 100% !important;
+    margin-left: 0px !important;
+    opacity: 0 !important;
+    transition-duration: 0.5s !important;
+}
+
 .view{
     zoom: 100%;
     margin-left: -0px;
     opacity: 1;
     transition-duration: 0.7s;
+    border-radius: 35px;
 }
 
 
@@ -75,3 +83,21 @@ body{
     margin-top: -32px;
     background-color: #69a428;
 }
+
+.win-p{
+    box-shadow: 0  0 30px rgba(0, 255, 0, 1);
+    border-radius: 35px;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 255, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(0, 255, 0, 0);
+  }
+}
+
+
+

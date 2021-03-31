@@ -21,8 +21,18 @@ $(document).ready(function () {
                 console.log(resp);
                 break;
             case 3:
-                resp = 4;
+                resp = resp + 1;
                 $(".r4").addClass('view');
+                console.log(resp);
+                break;
+            case 4:
+                resp = 5;
+                $(".r1").addClass('no-view-fin');
+                $(".r2").addClass('no-view-fin');
+                $(".r3").addClass('no-view-fin');
+                $(".r4").addClass('no-view-fin');
+                $(".win").removeClass('no-view-fin');
+                $(".win").addClass([ 'view', 'win-p' ]);
                 console.log(resp);
                 break;
             default:
