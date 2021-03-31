@@ -7,8 +7,8 @@ $(document).ready(function () {
         switch (resp) {
             case 0:
                 resp = resp + 1;
+                $(".pregunta").addClass('no-view-fin');
                 $(".r1").addClass('view');
-                console.log(resp);
                 break;
             case 1:
                 resp = resp + 1;
