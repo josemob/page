@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="YOUR-PROJECT/chaffle.min.js"></script>
+    <!-- CDN -->
+    <script src="src/chaffle.js"></script>
+</head>
+
+<body>
+    
+    <div id="caraota-r">
+        <p id="selector" data-chaffle="cn">513245</p>
+    </div>
+
+    <script>
+        var elements = document.querySelectorAll('[data-chaffle]');
+        Array.prototype.forEach.call(elements, function(el) {
+            var chaffle = new Chaffle(el, {
+                speed: 30,
+                delay: 350,
+            });
+            chaffle.init();
+        });
+    </script>
+</body></html>
