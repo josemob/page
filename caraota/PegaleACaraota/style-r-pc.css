@@ -107,6 +107,7 @@ body{
 }
 
 .win-p{
+    opacity: 1 !important;
     box-shadow: 0  0 30px rgba(0, 255, 0, 1);
     border-radius: 35px;
     animation: pulse-animation 2s infinite;
