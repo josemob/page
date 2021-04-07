@@ -68,10 +68,10 @@ body{
 
 .respuestas{
     height: 540px;
-    width: 768px;
+    width: 620px;
     font-family: Helvetica;
     font-weight: 700;
-    margin-left: 0%;
+    margin-left: -40%;
 }
 
 .respuestas div{
@@ -107,20 +107,9 @@ body{
 }
 
 .win-p{
-    position: absolute;
-    height: 120px;
-    width: 500px;
-    left: 50%;
-    margin-left: -250px;
-    top: 50%;
-    margin-top: -60px;
-    zoom: 150%;
     box-shadow: 0  0 30px rgba(0, 255, 0, 1);
     border-radius: 35px;
-    opacity: 0;
-    animation-name: pulse-animation;
-    animation-duration: 2s; 
-    
+    animation: pulse-animation 2s infinite;
 }
 
 @keyframes pulse-animation {
@@ -131,5 +120,6 @@ body{
     box-shadow: 0 0 0 30px rgba(0, 255, 0, 0);
   }
 }
+
 
 
