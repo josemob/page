@@ -68,10 +68,10 @@ body{
 
 .respuestas{
     height: 540px;
-    width: 620px;
+    width: 768px;
     font-family: Helvetica;
     font-weight: 700;
-    margin-left: -40%;
+    margin-left: 0%;
 }
 
 .respuestas div{
@@ -107,20 +107,35 @@ body{
 }
 
 .win-p{
-    opacity: 1 !important;
+    position: absolute;
+    height: 120px;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -60px;
+    zoom: 150%;
     box-shadow: 0  0 30px rgba(0, 255, 0, 1);
     border-radius: 35px;
     animation: pulse-animation 2s infinite;
 }
+
+
 
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0px rgba(0, 255, 0, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 30px rgba(0, 255, 0, 0);
+    box-shadow: 0 0 0 40px rgba(0, 255, 0, 0);
   }
 }
 
-
-
+@keyframes locacion {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 200px rgba(0, 255, 255, 0);
+  }
+}
