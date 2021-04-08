@@ -4,6 +4,9 @@
 
 body{
     background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #caraota-r{
@@ -39,7 +42,7 @@ body{
     position: absolute;
     font-family: Montserrat, sans-serif;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 40px;
     margin-top: 448px;
     margin-left: 170px;
     width:365px;
@@ -53,4 +56,9 @@ body{
 
 .view{
     opacity: 1;
+}
+
+#videoBackground{
+    width: 100%;
+    z-index: -1;
 }
