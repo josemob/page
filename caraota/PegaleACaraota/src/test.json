@@ -25,60 +25,60 @@
               "opcionWin": "4"
           },
           {
-              "pregunta": "Pregunta 4",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
+              "pregunta": "¿Cuándo se tiene previsto que se estrene la película Cruella?",
+              "opcion1": "Para julio del 2021",
+              "opcion2": "Ya se estrenó ",
+              "opcion3": "El 27 de mayo ",
+              "opcion4": "Para el año 2022",
               "opcionWin": "3"
           },
           {
-              "pregunta": "Pregunta 5",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "2"
+              "pregunta": "¿Cuáles son las dos cosas extraordinarias en el perfil de Instagram de Jamie Lynn?",
+              "opcion1": "El número de seguidores y su apellido",
+              "opcion2": "Su foto de perfil y sus seguidores",
+              "opcion3": "Un mosaico central y su apellido",
+              "opcion4": "Una ardiente foto más su foto",
+              "opcionWin": "1"
           },
           {
-              "pregunta": "Pregunta 6",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "2"
-          },
-          {
-              "pregunta": "Pregunta 7",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "2"
-          },
-          {
-              "pregunta": "Pregunta 8",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
+              "pregunta": "¿Qué papel jugará el príncipe Harry tras un contrato multimillonario?",
+              "opcion1": "Accionista",
+              "opcion2": "Director creativo",
+              "opcion3": "Productor ejecutivo",
+              "opcion4": "Actor",
               "opcionWin": "3"
           },
           {
-              "pregunta": "Pregunta 9",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
+              "pregunta": "¿Cuántos ha perdido el Manchester City por la pandemia?",
+              "opcion1": "900 millones de libras",
+              "opcion2": "250 millones de libras",
+              "opcion3": "58 millones de libras",
+              "opcion4": "126 millones de libras",
+              "opcionWin": "4"
+          },
+          {
+              "pregunta": "¿Con qué cantidad de kilómetros se deben cambiar los amortiguadores a tu vehículo?",
+              "opcion1": "A partir de los 65.000 kilómetros recorridos",
+              "opcion2": "A partir de los 80.000 kilómetros recorridos",
+              "opcion3": "A partir de los 70.000 kilómetros recorridos",
+              "opcion4": "A partir de los 90.000 kilómetros recorridos",
+              "opcionWin": "1"
+          },
+          {
+              "pregunta": "¿Qué nombre tendrá la bebé de J Balvin y su novia Valentina Ferrer?",
+              "opcion1": "Astromelia",
+              "opcion2": "Mía",
+              "opcion3": "Río",
+              "opcion4": "Jade",
               "opcionWin": "3"
           },
           {
-              "pregunta": "Pregunta 10",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "3"
+              "pregunta": "¿Según experto cuántos amigos debemos tener para ser exitosos?",
+              "opcion1": "5 personas",
+              "opcion2": "1 persona",
+              "opcion3": "Sólo tu familia",
+              "opcion4": "150 personas",
+              "opcionWin": "4"
           }
     ]
   }
