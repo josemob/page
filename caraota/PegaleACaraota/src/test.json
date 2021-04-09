@@ -9,20 +9,20 @@
               "opcionWin": "3"
           },
           {
-              "pregunta": "Pregunta 2",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "1"
+              "pregunta": "¿Qué le regaló una empresa estadounidense de camiones de basura a un niño?",
+              "opcion1": "Una pelota",
+              "opcion2": "Una bolsa con regalos",
+              "opcion3": "Un bate de béisbol",
+              "opcion4": "Una torta de cumpleaños",
+              "opcionWin": "2"
           },
           {
-              "pregunta": "Pregunta 3",
-              "opcion1": "juan@elcorreo.com",
-              "opcion2": "17/03/1991",
-              "opcion3": "juan@elcorreo.com",
-              "opcion4": "juan@elcorreo.com",
-              "opcionWin": "1"
+              "pregunta": "¿En qué fecha la NASA hará el primer vuelo de helicóptero en Marte?",
+              "opcion1": "A finales del año en curso",
+              "opcion2": "el 05 de julio del 2021",
+              "opcion3": "En la celebración del año nuevo",
+              "opcion4": "Desde el 8 de abril",
+              "opcionWin": "4"
           },
           {
               "pregunta": "Pregunta 4",
