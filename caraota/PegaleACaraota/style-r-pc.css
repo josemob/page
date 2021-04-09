@@ -2,19 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200;1,700;1,800;1,900&display=swap');
+
 *{margin:0px; padding: 0px;}
 
 body{
     background-color: white;
     background-size: auto 100%;
-    cursor: crosshair
+    cursor: crosshair;
+    overflow: hidden !important;
+    width: 100vw;
+    height: 100vh;
 }
 
 #box-pc{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,10 +26,20 @@ body{
 }
 
 .no-view{
-    zoom: 120%;
     margin-left: -30px;
     opacity: 0;
     transition-duration: 0.5s;
+    font-size: 1.1em;
+    color: magenta;
+}
+
+
+.respuestas div p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 6em;
+    margin-left: 20px;
 }
 
 .no-view-fin{
@@ -45,6 +59,7 @@ body{
     opacity: 1;
     transition-duration: 0.7s;
     border-radius: 35px;
+    font-size: 1em;
 }
 
 .pregunta{
@@ -58,8 +73,10 @@ body{
 }
 
 .pregunta h3{
-    font-size: 4em;
-    font-family: helvetica;
+    font-size: 7em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900 !important;
+    color: black;
     text-transform: uppercase;
     font-weight: 700;
     padding: 0px 150px;
@@ -67,9 +84,8 @@ body{
 }
 
 .respuestas{
-    height: 540px;
-    width: 768px;
-    font-family: Helvetica;
+    height: auto;
+    width: 1240px;
     font-weight: 700;
     margin-left: 0%;
 }
@@ -78,16 +94,18 @@ body{
     display: flex;
     align-items: center;
     height: 120px;
-    margin-bottom: 20px;
+    height: 180px;
 }
 
 .respuestas div img{
-    width: 140px;
+    width: 210px;
 }
 
 .respuestas div p{
-    color: white;
-    font-size: 3.2em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 6em;
     margin-left: 20px;
 }
 
@@ -108,18 +126,12 @@ body{
 
 .win-p{
     position: absolute;
-    height: 120px;
-    width: 500px;
-    left: 50%;
-    margin-left: -250px;
-    top: 50%;
-    margin-top: -60px;
-    zoom: 150%;
+    font-size: 1.1em;
+    top: 42%;
+    width: 1240px;
     box-shadow: 0  0 30px rgba(0, 255, 0, 1);
-    border-radius: 35px;
     animation: pulse-animation 2s infinite;
 }
-
 
 
 @keyframes pulse-animation {
@@ -138,4 +150,11 @@ body{
   100% {
     box-shadow: 0 0 0 200px rgba(0, 255, 255, 0);
   }
+}
+
+#videoBackground{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }

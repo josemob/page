@@ -1,0 +1,84 @@
+  {
+      "preguntas": [
+          {
+              "pregunta": "¿Qué indicación le dió Chespirito al actor que hizo el papel de Don Ramón en el Chavo?",
+              "opcion1": "No llegues tarde",
+              "opcion2": "Habla más suave",
+              "opcion3": "Sé tú mismo",
+              "opcion4": "Mejora tu gestualidad",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "Pregunta 2",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "1"
+          },
+          {
+              "pregunta": "Pregunta 3",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "1"
+          },
+          {
+              "pregunta": "Pregunta 4",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "3"
+          },
+          {
+              "pregunta": "Pregunta 5",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "2"
+          },
+          {
+              "pregunta": "Pregunta 6",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "2"
+          },
+          {
+              "pregunta": "Pregunta 7",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "juan@elcorreo.com"
+          },
+          {
+              "pregunta": "Pregunta 8",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "juan@elcorreo.com"
+          },
+          {
+              "pregunta": "Pregunta 9",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "juan@elcorreo.com"
+          },
+          {
+              "pregunta": "Pregunta 10",
+              "opcion1": "juan@elcorreo.com",
+              "opcion2": "17/03/1991",
+              "opcion3": "juan@elcorreo.com",
+              "opcion4": "juan@elcorreo.com",
+              "opcionWin": "juan@elcorreo.com"
+          }
+    ]
+  }
