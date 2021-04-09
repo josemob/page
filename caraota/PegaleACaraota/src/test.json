@@ -54,7 +54,7 @@
               "opcion2": "17/03/1991",
               "opcion3": "juan@elcorreo.com",
               "opcion4": "juan@elcorreo.com",
-              "opcionWin": "juan@elcorreo.com"
+              "opcionWin": "2"
           },
           {
               "pregunta": "Pregunta 8",
@@ -62,7 +62,7 @@
               "opcion2": "17/03/1991",
               "opcion3": "juan@elcorreo.com",
               "opcion4": "juan@elcorreo.com",
-              "opcionWin": "juan@elcorreo.com"
+              "opcionWin": "3"
           },
           {
               "pregunta": "Pregunta 9",
@@ -70,7 +70,7 @@
               "opcion2": "17/03/1991",
               "opcion3": "juan@elcorreo.com",
               "opcion4": "juan@elcorreo.com",
-              "opcionWin": "juan@elcorreo.com"
+              "opcionWin": "3"
           },
           {
               "pregunta": "Pregunta 10",
@@ -78,7 +78,7 @@
               "opcion2": "17/03/1991",
               "opcion3": "juan@elcorreo.com",
               "opcion4": "juan@elcorreo.com",
-              "opcionWin": "juan@elcorreo.com"
+              "opcionWin": "3"
           }
     ]
   }
