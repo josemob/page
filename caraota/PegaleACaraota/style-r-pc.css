@@ -6,6 +6,13 @@
 
 *{margin:0px; padding: 0px;}
 
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --all: white;
+  --font: helvetica;
+}
+
 body{
     background-color: white;
     background-size: auto 100%;
@@ -13,6 +20,7 @@ body{
     overflow: hidden !important;
     width: 100vw;
     height: 100vh;
+    background-color: black;
 }
 
 #box-pc{
@@ -32,14 +40,14 @@ body{
 }
 
 .respuestas .no-view p{
-    font-size: 76px;
+    font-size: 74px;
 }
 
 
 .respuestas div p{
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font), sans-serif;
     font-weight: 800;
-    color: black;
+    color: var(--all);
     margin-left: 20px;
 }
 
@@ -64,11 +72,11 @@ body{
 }
 
 .respuestas .view p{
-    font-size: 66px !important;
+    font-size: 60px !important;
 }
 
 .pregunta{
-    color: white;
+    color: var(--all);
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -79,9 +87,9 @@ body{
 
 .pregunta h3{
     font-size: 70px;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font), sans-serif;
     font-weight: 900 !important;
-    color: black;
+    color: var(--all);
     text-transform: uppercase;
     font-weight: 700;
     padding: 0px 150px;
@@ -90,29 +98,27 @@ body{
 
 .respuestas{
     height: auto;
-    width: 1240px;
-    font-weight: 700;
+    width: 1024px;
     margin-left: 0%;
 }
 
 .respuestas div{
     display: flex;
     align-items: center;
-    height: 120px;
-    height: 160px;
+    height: 170px;
 }
 
 .respuestas div img{
-    width: 190px;
+    width: 150px;
 }
 
 .respuestas div p{
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font), sans-serif;
     font-weight: 800;
-    color: black;
-    font-size: 68px;
+    color: var(--all);
     margin-left: 20px;
     margin-top: 40px;
+    line-height: 1.2em;
 }
 
 .btns{
@@ -134,7 +140,7 @@ body{
     position: absolute;
     font-size: 88px;
     top: 42%;
-    width: 1240px;
+    padding: 10px 50px;
     box-shadow: 0  0 30px rgba(0, 255, 0, 1);
     animation: pulse-animation 2s infinite;
 }
@@ -163,4 +169,5 @@ body{
     position: absolute;
     top: 0;
     z-index: -1;
+    display: none;
 }
