@@ -5,6 +5,8 @@
 body{
     background-color: white;
     background-size: auto 100%;
+    background-image: url(images/Fondo%20Telef%C3%B3nico.jpg);
+    background-size: cover;
 }
 
 #box-pc{
@@ -56,6 +58,7 @@ body{
 .ticket ul li{
     width: 88%;
     margin-left: 6%;
+    margin-bottom: 50px;
 }
 
 .ticket ul button{
