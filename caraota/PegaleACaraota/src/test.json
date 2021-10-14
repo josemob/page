@@ -1,27 +1,27 @@
   {
       "preguntas": [
           {
-              "pregunta": "¿Qué indicación le dió Chespirito al actor que hizo el papel de Don Ramón en el Chavo?",
-              "opcion1": "No llegues tarde",
-              "opcion2": "Habla más suave",
-              "opcion3": "Sé tú mismo",
-              "opcion4": "Mejora tu gestualidad",
+              "pregunta": "¿Cuál fue la puntuacion de Daniel Dhers, que le dio el oro en el Urban World Series Barcelona?",
+              "opcion1": "86.33",
+              "opcion2": "96.55",
+              "opcion3": "87.33",
+              "opcion4": "81.00",
               "opcionWin": "3"
           },
           {
-              "pregunta": "¿Qué le regaló una empresa estadounidense de camiones de basura a un niño?",
-              "opcion1": "Una pelota",
-              "opcion2": "Una bolsa con regalos",
-              "opcion3": "Un bate de béisbol",
-              "opcion4": "Una torta de cumpleaños",
+              "pregunta": "¿en que playa se completò la demostracion del BeachBot?",
+              "opcion1": "En playa parguito",
+              "opcion2": "En Scheveningen",
+              "opcion3": "En Miami Beach",
+              "opcion4": "En Lummus Park Beach",
               "opcionWin": "2"
           },
           {
-              "pregunta": "¿En qué fecha la NASA hará el primer vuelo de helicóptero en Marte?",
-              "opcion1": "A finales del año en curso",
-              "opcion2": "el 05 de julio del 2021",
-              "opcion3": "En la celebración del año nuevo",
-              "opcion4": "Desde el 8 de abril",
+              "pregunta": "¿Cuál es el nombre del director tecnico del Plan de prevenciòn de riesgo volcanico de canarias? ",
+              "opcion1": "Juan Jose Larousse",
+              "opcion2": "Andres Larens",
+              "opcion3": "Roberto Bolaños",
+              "opcion4": "Miguel Angel Morcuende",
               "opcionWin": "4"
           },
           {
